@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="google-site-verification" content="k4SBmdvX1eCenxhzNzWGtvoAo4xRsyLvspQy_VAFl2k" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>How and Why RapidReader Works</title>
+
+<meta name="keywords" content="RapidReader, rapidreader, rapid reader, speedread, speedreading, accelerated reading, multiply readingspeed, speed-reading, speed-read, speed, speed read, PDF, Portable document format, Adobe, readability, Microsoft Office, Windows, Android, Blackberry, iOs, iPhone, iPad, iMac, Macintosh, Apple, Linux, mobile phone, cell phone, PDA, Palm OS, Symbian, Sony, Samsung, Nokia, Softology, Evernote, reading, read, rapid, books, e-zines, rapidreader, rapid-reader, newspaper,library,speed-reading software, law practice, study, graduate school, reading software, courses, corporate training, reading education, education, educational software, k-12, school, elementary, learning disabilities, dyslexia, attention defecit disorder, tutor, Low Vision, macular degeneration, Diabetes, Nystagmus, retinopathy, muscular dystrophy, spinal injury, presbyopia, eccentric viewing, steady eye technique " />
+<meta name="description" content="RapidReader takes the effort out of reading on any size screen. RapidReader's patented software will double or triple your on-screen reading speed in less than 5 minutes. It's easy. You just have to see it to believe it." />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73057279-1', 'auto');
+  ga('send', 'pageview');
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+
+
+<style type="text/css"> 
+<!-- 
+<!--Web Site design and construction by MacsMillion Productions LLC-->
+
+--> 
+</style>
+
+<style type="text/css">
+<!--
+
+
+-->
+</style>
+<script type="text/javascript" src="p7pmm/p7PMMscripts.js"></script>
+<link href="p7pmm/p7PMMh04.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="p7epm/p7EPMscripts.js"></script>
+<link href="p7epm/epm1/p7EPM01.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<link href="p7pmm/p7PMMh07.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="p7pmm/p7PMMh01.css" rel="stylesheet" type="text/css" media="all" />
+<link href="p7_cssexpress/p7exp/p7exp.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+#sidebar1 { width: 220px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+#sidebar1 { padding-top: 30px; }
+#mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="footernav.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+
+-->
+</style>
+<!--<link href="rr_index_text.css" rel="stylesheet" type="text/css" />-->
+<style type="text/css">
+<!--
+a:link {
+	color: #085a8c;
+}
+a:visited {
+	color: #E0742C;
+}
+a:hover {
+	color: #4a4a4a;
+}
+
+/*---------- tooltip -----------*/
+a.tt{
+	position:relative;
+	z-index:24;
+	color:#3CA3FF;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #069;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{
+	z-index:10002;
+	color: #aaaaff;
+	background-color: #CCC;
+}
+a.tt:hover span.tooltip{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0;
+	width:400px;
+	color: #000;
+	text-align: left;
+	filter: alpha(opacity:95);
+	KHTMLOpacity: 0.95;
+	MozOpacity: 0.95;
+	opacity: 0.95;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.95em;
+	line-height: 1.2em;
+	font-weight: normal;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	border: 2px dotted #CCC;
+}
+a.tt:hover span.top{
+	display: block;
+	background-color: #CCC;
+	padding-top: 10px;
+	padding-right: 8px;
+	padding-bottom: 0;
+	padding-left: 8px;
+	background-image: url(images2/tooltip_bg.png);
+	background-repeat: repeat-x;
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px;
+	background-color: #CCC;
+	background-image: url(images2/tooltip_bg.png);
+	background-repeat: repeat-x;
+}
+a.tt:hover span.bottom{
+	display: block;
+	color: #548912;
+	background-color: #CCC;
+	background-image: url(images2/tooltip_bg.png);
+	background-repeat: repeat-x;
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+}
+<!--
+a:link {
+	color: #085A8C;
+	text-decoration: none;
+}
+a:visited {
+	color: #ea9c28;
+	text-decoration: none;
+}
+a:hover {
+	color: #4a4a4a;
+	text-decoration: underline;
+}
+-->
+</style>
+<!--<link href="rr_site_text.css" rel="stylesheet" type="text/css" />-->
+<style type="text/css">
+<!--
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+
+<script type="text/javascript" src="p7exp/p7exp.js"></script>
+
+
+
+<link href="TEST_index2_11.css" rel="stylesheet" type="text/css" />
+<link href="rr_site_6_14txt.css" rel="stylesheet" type="text/css" />
+
+<!--text resizer script must follow all exteral CSS sheets-->
+
+<link href="idxdoctextsizer.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="doctextsizer.js">
+
+/***********************************************
+* Document Text Resizer Script- by JavaScript Kit (www.javascriptkit.com)
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+
+</head>
+<body onLoad="P7_ExpMenu()','
+MM_preloadImages('images2/freetrial_over.png','images2/rr_lib_icon_on_200.png','images2/power_tip_over.png','images2/buy_now_butt_over.jpg','images_rrfree_fin/video_button_idx_over.png')">
+<div id="containerinner"> 
+  <div id="header"> 
+	<div id="logohead"><a href="index.html"><img src="images_rrfree_fin/new_rr_logo_head.jpg" width="411" height="108" alt="RapidReader Created for Accelerated Reading Home" /></a></div>
+	<div id="new2_topnavwrap"> 
+	  <div id="p7PMM_1" class="p7PMMh04">
+	    <ul class="p7PMM">
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_prod.jpg" width="130" height="30" alt="RapidReader Products" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="abt_rr_pro.html">RR PRO for PDF</a></li>
+	            <li><a href="abt_rr_free.html">RR Standard FREE</a></li>
+                <li><a href="head_to_head.html">RR PRO vs. Standard</a></li>
+	            <li><a href="rr_mobile.html">Products for Mobile and Tablets</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_about.jpg" width="74" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="what_is_rr.html">What is RapidReader?</a></li>
+	            <li><a href="faq.html">FAQ</a></li>
+	            <li><a href="rr_science.html">The Science Behind RR</a></li>
+                <li><a href="low_vis.html">RR for Low Vision</a></li>
+                <li><a href="learn_dis.html">RR for Learning Disabilities</a></li>
+	            <li><a href="scrnshots.html">Screen Shots</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_buy.jpg" width="54" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="https://rapidreader.com/sub/index.php?option=com_hikashop&ctrl=product&task=updatecart&quantity=1&checkout=1&product_id=1">Buy From Our Secure Store</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_video.jpg" width="70" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="rr_vid.html">Links to Video </a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_support.jpg" width="78" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="help_contents.html">Help Contents</a></li>
+	            <li><a href="help_install.html">Installation</a></li>
+	            <li><a href="troubleshoot.html">Trouble Shooting</a></li>
+	            <li><a href="support.html">Support</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="p7pmmclearfloat">&nbsp;</div>
+        <!--[if lte IE 6]>
+<style>.p7PMMh04 ul ul li {float:left; clear: both; width: 100%;}.p7PMMh04 {text-align: left;}.p7PMMh04, .p7PMMh04 ul ul a {zoom: 1;}</style>
+<![endif]-->
+        <!--[if IE 5]>
+<style>.p7PMMh04, .p7PMMh04 ul ul a {height: 1%; overflow: visible !important;} .p7PMMh04 {width: 100%;}</style>
+<![endif]-->
+        <!--[if IE 7]>
+<style>.p7PMMh04, .p7PMMh04 a{zoom:1;}.p7PMMh04 ul ul li{float:left;clear:both;width:100%;}</style>
+<![endif]-->
+        <script type="text/javascript">
+<!--
+P7_PMMop('p7PMM_1',1,0,-5,-5,0,0,1,1,0,1,1,1,0,0);
+//-->
+        </script>
+      </div>
+</div>
+	<!-- end #header -->
+  </div>
+  <div id="pic_bnr_new"> 
+  
+  
+	<div id="home_top_pic"><img src="images_rrfree/how_wrk_page_hdr.jpg" width="478" height="212" alt="How Does RapidReader Work" />
+    </div>
+   <!--<div id="spd_rd_dmnd_new"><img src="images_rrfree/spd_read_hdr_orngcap.png" width="320" height="35" /></div>-->
+    
+	
+
+	
+	
+	<!--<div id="freetrial"> <a href="free_trial.html"><img src="images2/freetrial.png" alt="FREE TRIAL!" width="108" height="29" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images2/freetrial_over.png',1)" onmouseout="MM_swapImgRestore()" /></a> 
+	</div>-->
+     
+   
+	<!--<div id="magglass"> 
+	  <div id="menuwrapper"> 
+		<ul id="p7menubar">
+		  <li><a class="trigger" href="#"></a> 
+			<ul>
+			  <li><a href="&lt;a href="#" class="texttoggler" rel="normalview"><img src="Fireworks/normalview.png" width="140" height="26" alt="Click to Return to Normal Text Size" /></a></li>
+			  <li><a href="#" class="texttoggler" rel="largeview"><img src="Fireworks/largeview.png" width="140" height="26" alt="Click for Large Text Size"/></a></li>
+			  <li><a href="#" class="texttoggler" rel="xlargeview"><img src="Fireworks/xlargeview.png" width="140" height="26" alt="Click for Extra Large Text Size" /></a></li>
+			</ul>
+		  </li>
+		</ul>
+		<br class="clearit" />
+	  </div>
+	</div>-->
+	<div id="hme_hdr_txt_box">
+	  <div class="hme_hdr_txt">Make Life Easier.<br/><font size="+1">
+      Now for a limited time</font><br/>Get RapidReader Standard FREE!<br/> a $29.95 value</div>
+	</div>
+    <div id="hme_rr_free_box"><a href="abt_rr_free.html"><img src="images_rrfree/rr_free_dwl_off155.png" alt="Click here for free download of RapidReader Standard" width="155" height="155" id="Image2" onmouseover="MM_swapImage('Image2','','images_rrfree/rr_free_dwl_over155.png',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+    <p>&nbsp;</p>
+	
+
+  </div>
+  <!--SIDEBAR1IDX GOES HERE-->
+  <!--end sidebar-->
+  <!--end sidebar-->
+  <div id="new_1col_tablecontainer"><br/> 
+	<br/>
+	<div id="new_textblock">
+    <div id="rr_std_float"><img src="images_rrfree/page_illus_174_fin2.jpg" width="174" height="174" alt="Like Watching a Movie" /></div>
+    <h1 class="maincontentheadidx">How Does RapidReader Work?<br/>
+	</h1>
+	<h2 class="georgia16">Reading is as Easy as Watching a Movie
+	</h2><h3 class="georgia14"><span class="floating_dropcap_inner_mid">R</span></h3>
+    <p>apidReader's technology works by optimizing the display of text to eliminate the most common barriers to reading speed: having to move your eyes across a line of text and &quot;sounding out&quot; words to yourself. It uses the power of the computer to enhance your ability to read much faster. This however is much more complicated than just displaying words on a screen. HOW the words are displayed is the key to everyday practicality for accelerating your reading speed and ergonomic comfort. After more than 10 years of research and development RapidReader was created specifically for this purpose. It is unique in it's ability to immediately multiply your reading speed, and do it easily and comfortably. This is the result of RapidReader's patented <strong>Human Cadence™</strong> technology which analyses the content you want to read and then displays it to you in the natural rhythms of human speech. This breakthrough means greater comprehension, reduced eye fatigue and &quot;lean-back&quot; comfort even at very high reading speeds. <br />
+    </p>
+<hr />
+    <p>&nbsp; </p>   
+    <table width="98%" border="0" cellspacing="5" cellpadding="2">
+      <tr>
+        <td>How it Works...</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center" width="44%"><img src="images_rrfree_fin/drag_drop_fin300.jpg" width="300" height="207" alt="Drag and drop a document onto the RR icon" /></td>
+        <td width="56%">
+          <table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+            <tr>
+              <th valign="top" scope="col"><font color="#4a4a4a">When you open a document or web page in RapidReader, the software analyzes the content, extracts the text and then configures it for RapidReader's optimized high speed reading.</font></th>
+            </tr>
+          </table>
+          <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images_rrfree_fin/para_view_fin300.jpg" width="300" height="207" alt="Document opens in paragraph view" /></td>
+        <td><table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+            <tr>
+              <th valign="top" scope="col"><font color="#4a4a4a">Then the RapidReader window will present the text in  what's called the Paragraph View. This is similar to what you might see in a word processor page. <br />
+                <br />
+                The difference is that to accelerate your reading all you have to do is <em>double click </em>on the word where you want to begin. This will launch the TurboView. </font></th>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><p align="center"><img src="images_rrfree_fin/music_spch_fin.jpg" width="372" height="64" alt="Display text in the rhythms of natural speech" /></p></td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images_rrfree_fin/turbo_natural_fin300.jpg" width="300" height="207" alt="The TurboView high speed display" /></td>
+        <td><table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+            <tr>
+              <th valign="top" scope="col"><font color="#4a4a4a">RapidReader's patented Human Cadence™ engine then streams the words in sequence in the center of your field of view like a movie. The words are displayed in the natural rhythms of human speech. This unique quality enhances comprehension and makes RapidReader easy and comfortable even at very high reading speeds. All you have to do is sit back and let the software do the work for you.</font> </th>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+          <tr>
+            <th valign="top" scope="col"><font color="#4a4a4a">At any time you can change the speed using the arrow keys. <br />
+              <br />
+              Single click to pause or <br />
+              <br />
+              Press the spacebar to return to the ParagraphView</font></th>
+            </tr>
+        </table></td>
+        <td><table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+          <tr>
+            <th valign="top" scope="col"><img src="images_rrfree_fin/updown_speed_fin.jpg" width="139" height="99" alt="Up down arrows control the speed an time you want" /></th>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><table align="center" width="98%" border="0" cellspacing="5" cellpadding="10">
+          <tr>
+            <th  align="center"valign="top" scope="col"><a href="rr_vid.html"><img src="images_rrfree_fin/video_button_idx.png" alt="Watch video of RapidReader in Action" width="174" height="56" id="Image1" onmouseover="MM_swapImage('Image1','','images_rrfree_fin/video_button_idx_over.png',1)" onmouseout="MM_swapImgRestore()" /></a></th>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2"><p class="darkgrayh3"><em><strong>For best results</strong></em> let the tutorial guide you thorough the quickest way to get up to your &quot;new normal&quot; reading speed. It's included in the download folder. <a href="abt_tutorial.html"><strong>You can see what it's all about here </strong></a>and how you will be reading 500 wpm in less than 5 minutes.</p></td>
+        </tr>
+    </table>
+    <p><br />
+    <hr />
+    <h2 class="georgia16">Why RapidReader Works: The Nature of Reading
+	</h2>
+    <p>
+<span class="orangehead16">In the Beginning: The Search for Faster Reading</span>
+      <br />
+      What would it take to read faster? That was the question  clinical researchers had been asking for years. And they found some answers. The method used in the original Johns Hopkins study (and many other studies since) is called &quot;Rapid Serial Visual Display&quot; (RSVP). It has a number of powerful advantages when it comes to accelerating your reading speed.
+  
+  The immediate increase in reading speed that people saw in the lab was the result of changing the display of text into a sort of movie. What they did was display each word, one at a time, as if it were a frame of a film or video. This "movie" (actually an article about yacht building) formed a stream of words shown in a large font in the center of the field of view. While the change seems simple the effect was profound. All the reader had to do was sit back and view the text like they would a movie. In minutes the people in that room were reading and comprehending<strong> 1600 words per minute.*</strong></p>
+    <p>However there was a catch. People found RSVP to be uncomfortable for reading for more than a few minutes at a time. The repetitive, robotic, metronome quality of the display was tiring and unnatural. This turns out to be a central problem to the use of this technology in everyday life.<br/>
+      <span class="sdbr_ppl_text"> <em>*For more about the psycho-physiology of accelerated reading please visit the "Science behind RapidReader" page.</em></span> 
+    </p>
+    <blockquote>
+      <p class="georgia16"><em>Take a new kind of high speed text display from the laboratory and then add the rhythms of human speech for greater ease and comprehension and you have RapidReader.</em></p>
+    </blockquote>
+
+      <p><span class="orangehead16">The RapidReader Difference:The Importance of the <em>Rhythm</em> of Human Speech<br />
+      </span>
+RapidReader goes far beyond basic RSVP . It took nearly 10 years of research and testing with thousands of people to find a breakthrough for the problem of ease and comfort. Where RapidReader is unique is its patented ability to modify the display of text content to deliver it in the natural rhythms of human speech. This results in far easier reading and most importantly. enhanced comprehension even at very high speeds.</p><div id="rhthm_spch_box"><img src="images_rrfree/rhythm_of_spch_mrg.png" width="360" height="62" alt="The Importance of Rhythm in Understanding Speech" /></div>
+<p> If you think back to any conversation you've had you'll realize that verbal communication is filled with pauses and timing for emphasis. This contributes greatly to our understanding. RapidReader is able to provide this important aspect of comprehension by analyzing the document file to create the timing for the appearance of each word. In other words It is designed to mimic human speech. Getting this timing right took several years of research and development. As you change your reading speed, the rhythm adapts to retain comfort, naturalness and increase comprehension. The result is unparalleled ease for everyday use.
+</p>
+<br/>
+
+
+    
+   <div id="how_rr_book_flip">
+	<img src="images_rrfree/book_flip.png" width="250" height="147" /></div><p><span class="orangehead16">Why is Reading Faster So Difficult?</span><br />
+ 
+   There are, two primary reasons for the &quot;information bottleneck&quot; when we read. 
+      <div class="list_inner">
+	   <ul>
+	       <p><li><strong>Having to Move our Eyes Along a Line of Text </strong></li>
+	      <li>"Sounding Out" the Words as We Read</li>
+        </ul>
+      </div>
+<p><span class="orangehead16"><br />
+  Eye Movement</span>
+   <br />
+      Eye movement is one of  the principal  barriers to reading speed. For thousands of years we've essentially had to read the same way. And, like most things in  human history reading relied on muscle power.  We didn't really have a choice. We had to use muscles to move our eyes from one word to the next.   Compared with how fast we think it's extremely inefficient. Gathering text this way is a constant process of targeting and coordinating a complex sequence of muscle actions  called   &quot;saccadic movement&quot;. </p>
+<div id="reading_sand_box"><img src="images_rrfree/reading_in_sand400X100.jpg" width="360" height="90" alt="reading in sand" /></div>
+   <p>What our eyes do on the page is   similar to reading a message on a sandy beach. You have to use your muscles to walk to each word then stop and focus on it. Then move to the next word, stop and focus and so on. That's exactly what's going on when you're reading text in a line on a page. Your eyes <strong>move-stop-focus-move-stop-focus over and over again</strong>.   That's a lot of work. If you've ever  suffered from eye fatigue you already know. It's also really slow compared with the incredible speed our brains can process information.
+  So RapidReader uses technology to eliminate most of the work your eyes must do  by delivering the words directly into your field of view. <br />
+  <br/>
+  
+  
+   <span class="orangehead16">&quot;Sounding Out&quot; Words to Ourselves</span>
+   <br />
+   Another major factor that slows us down is "sounding out" words to ourselves as we read them.
+   This is a left over from when we were learning to read as children. Humans are &quot;hardwired&quot; for speech. Most of us naturally start speaking very early. Reading however is another matter. The way we learn to read is by associating something written on the page with the familiar spoken sound it represents.   Your teacher or parent would point to a word in a book and pronounce it for you. Eventually you'd make the association between the symbol you saw and the sound. For instance you'd learn to recognize &quot;C-A-T&quot;  as the symbol for a furry animal that scratches up the furniture. However, once you learned to recognize the symbol, you no longer needed to pronounce it to know what it means.<br />
+   <br /><div id="find_the_5_box"><img src="images_rrfree/find_the_5.jpg" width="374" height="338" alt="We are very fast at pattern recognitiion." /></div>
+
+   <p><br />
+The key word here is SYMBOL. Words are just like any symbol that's used to represent something. All you need to do is recognize its SHAPE and you know what it means virtually instantly. This is because humans are blazingly fast at visual pattern recognition and processing those patterns into meaning.<br />
+<br />
+<br />
+<br />
+<br/>
+     <br />
+     To see what we mean take the little test in the graphic on the left. Share it with friends to see how fast they can do it. <br />
+     <br />   
+     <span class="grayh3"><strong>We Humans are Blazingly Fast at Pattern Recognition</strong></span><br />
+        <br />
+     
+<p>Think about driving down the street and seeing a STOP sign. You don't say the word &quot;STOP&quot; to yourself. Hopefully you just put on the brakes because you instantly recognized what the symbol meant. 
+  
+  So in terms of reading speed every time you pronounce a word to yourself it's like going through a toll booth on the highway. It costs you.</p> 
+<div id="words_symbols__box"><img src="images_rrfree/words_are_symbols400X100.jpg" width="360" height="90" alt="Words are Symbols" /></div>
+  
+   <p>The good news is that when you get past a certain reading speed the tendency to sound out goes away.* With RR you're simply reading too fast for using the speech centers to translate a symbol into sound in your head. Suddenly you begin to read by understanding what you're <strong>seeing</strong> instead of by talking to yourself. You're now actually using  the much faster visual cortex to gather information.  
+     In brain scans researchers discovered that RSVP type accelerated reading moved the process from the speech centers of the brain to the visual cortex.<br />
+     <em>*For more about the visual cortex, Broca's area and Wernicke's area in accelerated reading please visit the <a href="rr_science.html">"Science behind RapidReader"</a> page. </em>
+   <p><span class="orangehead16"><br />
+     How Does RR work?: It uses the power of the computer to optimize the display to eliminate the most common barriers to reading speed.</span><br />
+</p>
+          <div class="list_inner">
+	    <ul>
+	      <li><strong>You don't have to move your eyes to find the next word.</strong></li>
+	      <li>The display of words in natural rhythms increases comfort and comprehension</li>
+    <li><strong>The type size can be very large</strong></li>
+    <li><strong>At higher speed the tendency to &quot;sound out&quot; the words disappears</strong></li>
+    <li><strong>You can sit back and just watch the text flow without scrolling or turning pages</strong></li>
+    <li>The display eliminates distracting visual clutter on the screen</li>
+    <li>Large Customizable Font </li>
+    <li>Customizable viewing area</li>
+    <li>Sit at any distance that's comfortable for you</li>
+        </ul>
+      </div>
+      
+     
+      
+      <div id="body_main_rr_free_float"><a href="abt_rr_free.html"><img src="images_rrfree/rr_free_dwl_off_108.png" alt="Download RapidReader Free" width="108" height="108" id="Image5" onmouseover="MM_swapImage('Image5','','images_rrfree/rr_free_dwl_over_108.png',1)" onmouseout="MM_swapImgRestore()" /></a></div><br/>
+     <p><span class="bullettextboldBLU">DOWNLOAD IT FREE TO SEE FOR YOURSELF.<br />
+</span><strong>Now with just one-click, </strong>you can get through your &quot;must 
+    do&quot; reading faster, easier and in a fraction of 
+    the time it used to take. And that gives you more time 
+  for the other things in life.</p>
+  <p><strong>Please, don't take our word for it... Download your Free copy of RapidReader Standard for Windows.</strong></p>
+  <BR/>
+  <BR/>
+  <BR/>
+
+  
+      
+
+
+	  
+    <div id="buy_table_box_1col">
+  <table width="95%" border="0" align="center" cellpadding="3" cellspacing="2">
+		<tr align="left"> 
+		  <td width="109" align="left" valign="middle"><a href="https://rapidreader.com/sub/index.php?option=com_hikashop&ctrl=product&task=updatecart&quantity=1&checkout=1&product_id=1 "><img src="images_rrfree/rr_pro_buy_off_108.png" alt="Upgrade to RapidReader PRO" width="108" height="108" id="Image6" onmouseover="MM_swapImage('Image6','','images_rrfree/rr_pro_buy_over_108.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+		  <td width="533" 
+                              class="rrparagraph"><strong> <a href="https://rapidreader.com/sub/index.php?option=com_hikashop&ctrl=product&task=updatecart&quantity=1&checkout=1&product_id=1 ">
+			<span class="buy_now_white_txt">Only $49.95 Upgrade to RapidReader PRO </span></a></strong></td>
+		</tr>
+	  </table></div><!--end upgrade box-->
+
+ <div id="new_featureslist_idx">
+ 
+    <p><span class="orangehead18">Just Some of the Reasons You'll Want RapidReader PRO</span></p>
+    <div id="new_speedbox_inner">
+     <img src="images2/950_wpm.png" alt="Read Up to 950 Words Per Minute" width="174" height="130" />
+      </div>
+    
+        
+	<ul>
+	      <font color="#085a8c">Practical Use</font>
+	      <li>It's There Whenever You Need It</li>
+	      <li>Instantly Load PDF, MS Word, Web Pages, E-mail attachments</li>
+	      <li>Read Research, Business Reports, Academic Assignments<br /><BR/>
+	        <font color="#085a8c">Speed and Ergonomic Comfort</font>
+	      </li>
+	      <li>Select your Reading Speed from 150-950 wpm</li>
+	      <li>Just Sit Back and Watch-- There's No Scrolling, </li>
+	      <li>Customize Your Font, Size and Screen Position</li>
+	      <li>Large Text Relieves Eyestrain<br /><br/>
+	      </li><font color="#085a8c">Information Efficiency</font>
+	      <li>3 Views-- Paragraph, Turbo and Pause Mode</li>
+	      <li>Add Notes, Highlites and Bookmarks</li>
+	      <li>Save PDF, Web Pages as RapidReader Files</li>
+	      <li>Share as E-mail Attachments or via DropBox</li>
+	      
+      </ul>
+</div>
+</div>
+<!--end_power user + rr pro buy box + features list--><!--end upgrade box--><br/>
+      
+  </div><!--end maincontent>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <br class="clearfloat" />
+  <div id="footer"> 
+	<div id="rrlibbox"> 
+	  <div id="p7PMM_6" class="p7PMMh07"> 
+		<ul class="p7PMM">
+		  <li><a href="#" class="p7PMM_img"><img src="images2/rr_lib_icon_200.png" width="200" height="35" alt="Visit the Free RapidReader Library!" /></a> 
+			<div> 
+			  <ul>
+				<li><a href="http://www.rapidreader.com/rr_lib_idx2.html">Visit 
+				  the RapidReader FREE Library.<br/>
+				  Hundreds of books and more in RapidReader format.</a></li>
+			  </ul>
+			</div>
+		  </li>
+		</ul>
+		<div class="p7pmmclearfloat">&nbsp;</div>
+		<!--[if lte IE 6]>
+<style>.p7PMMh07 .current_mark {font-weight: normal; text-transform: uppercase;} .p7PMMh07 ul ul .current_mark {font-weight: bold;} .p7PMMh07 li {filter: alpha(opacity=80);} .p7PMMh07 ul ul li {float:left; clear: both; width: 100%;}.p7PMMh07 {text-align: left;}.p7PMMh07 ul ul a {zoom: 1;}</style>
+<![endif]-->
+		<!--[if IE 5]>
+<style>.p7PMMh07, .p7PMMh07 ul ul a {height: 1%; overflow: visible !important;} .p7PMMh07 {width: 100%;}</style>
+<![endif]-->
+		<!--[if IE 7]>
+<style>.p7PMMh07, .p7PMMh07 a{zoom:1;}.p7PMMh07 ul ul li{float:left;clear:both;width:100%;}</style>
+<![endif]-->
+		<script type="text/javascript">
+<!--
+P7_PMMop('p7PMM_6',1,2,0,0,0,0,1,1,1,1,1,1,1,0);
+//-->
+          </script>
+	  </div>
+	</div>
+	<!--<div id="footercontent">-->
+    <div id="footnavlist">
+    <ul>
+    <li><a href="contact.html">Contact</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="licensing.html">Licensing</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+	<div id="footerinfo"><span class="footertext">RapidReader®, Cinetext™ and 
+	  all variations are the sole property of SoftOlogy IdeaWorks Inc. &quot;Software 
+	  for the Human Operating System&quot; ™</span></div>
+  </div>
+  <!-- end #footer -->
+</div>
+<!-- end #container -->
+
+<script language="JavaScript" type="text/javascript"
+src="/softo_general.js">
+</script>
+
+<script language="javascript" type="text/javascript">
+
+// Call the page counter function.
+callPageCounter("index.html", null);
+
+</script>
+
+<script type="text/javascript">
+//documenttextsizer.setup("shared_css_class_of_toggler_controls")
+documenttextsizer.setup("texttoggler")
+
+</script>
+
+
+</body>
+</html>

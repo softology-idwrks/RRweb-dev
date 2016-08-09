@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body  {
+	margin: 0px; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0px;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	min-height: 230px;
+	background-color: #fff;
+}
+
+/* index page text */
+
+.maincontentheadidx {
+	color: #4a4a4a;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-size: 1.9em;
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+#pic_bnr_new {
+	width: 948px;
+	min-height: 111px;
+	background-image: url(images_rrfree/TOP_PIC_BNR_SLC.png);
+	padding: 0px;
+	line-height: normal;
+	position: relative;
+	margin-top: -45px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-repeat: repeat-y;
+	height: 217px;
+}
+

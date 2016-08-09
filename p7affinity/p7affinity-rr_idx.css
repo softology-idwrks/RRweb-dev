@@ -1,0 +1,493 @@
+/* 
+  ------------------------------------------------
+  PVII Affinity
+  Copyright (c) 2013 Project Seven Development
+  www.projectseven.com
+  Boardroom Theme
+  ------------------------------------------------
+*/
+
+body {
+	background-color: #ECECEC;
+	background-image: url(img/boardroom-bg.png);
+	font-family: "Droid Sans", Optima, "Segoe UI", Arial, sans-serif;
+	margin: 0px 0px 30px 0px;
+}
+
+
+/*Drop Menu Magic Adjustments*/
+.p7DMM03 {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.p7DMM03.p7DMM.p7dmm-left {
+	padding-left: 20px;
+	margin-top: 0px;
+	height: auto;
+}
+.p7DMM03.p7DMM.p7dmm-right {
+	padding-right: 20px;
+}
+
+
+/*Baseline Adjustment for images needed with strict DOCTYPE*/
+img {vertical-align: bottom;}
+
+
+/*Logo and Banner*/
+#logo {
+	padding: 10px 20px;
+	position: relative;
+	z-index: 10;
+	background-image: -webkit-linear-gradient(#333, #111);
+	background-image: linear-gradient(#333, #111);
+	background-color: #151515;
+	box-shadow: 0px 0px 30px #000;
+}
+#banner {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+
+/*Utility Rules for images. Scalable class makes images scale with window size.*/
+img.scalable {
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+/* 
+Add the fancy class to the scalable class to add a drop shadow
+<img class="scalable fancy"...>
+*/
+.fancy {
+	border: 1px solid rgba(255,255,255,.5);
+	box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}
+/* 
+Add the accented class to the scalable class to add eounded corners and a border.
+<img class="scalable accented"...>
+*/
+.accented {
+	border-radius: 5px;
+	border: 1px solid #222;
+}
+
+
+/*Layout Wrapper*/
+#layout {
+	max-width: 1280px;
+	margin: 0px auto;
+	background-color: #FFF;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+	border-radius: 0px 0px 7px 7px;
+	margin-top: 7px;
+}
+#masthead {
+	padding-bottom: 0px;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: auto;
+}
+#masthead h1 {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 1.35em;
+	font-size: 1em;
+}
+#masthead h1 a, #masthead h1 a:hover {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3, h4 {
+	margin: 0px;
+	font-weight: normal;
+	font-family: Federo, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+h2 {font-size: 1.75em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.35em;}
+.p7dmm-fixed, .p7DMM-toolbar {
+	background-image: url(img/logo-small.png);
+	background-repeat: no-repeat;
+	background-position: 1em center;
+	padding-left: 1.35em;
+	border-radius: 0px !important;
+}
+#masthead-left {
+	float: left;
+	width: 60%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#masthead-right {
+	float: left;
+	width: 38%;
+	text-align: right;
+}
+#masthead form {
+	margin-top: 1.35em;
+	margin-right: 1em;
+}
+input, button {
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.25);
+	padding: .75em;
+}
+form {
+	position: relative;
+}
+input.search-box {
+	border-radius: 4px;
+	border-right: none;
+	border: 1px solid rgba(0,0,0,.25);
+	width: 70%;
+}
+input.search-box:focus {
+	background-color: #82CEE1;
+}
+input.search-button {
+	background: url(img/search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 32px;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	visibility: 999;
+}
+#masthead.one-column #masthead-right, #masthead.one-column #masthead-left {
+	float: none;
+	width: auto;
+}
+#masthead.one-column #masthead-right {
+	display: none;
+}
+.columns-container:after, #masthead:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Default Row Structures*/
+.affinity-row {
+	padding: 0px;
+}
+/*This rule assigns a gray gradient background to every other row*/
+.affinity-row:nth-child(even) {
+	background-color: #EEE;
+	background-image: -webkit-linear-gradient(#EEE, #CCC);
+	background-image: linear-gradient(#EEE, #CCC);
+}
+/*Turns off the Background for Nested Rows*/
+.affinity-row .affinity-row:nth-child(even) {
+	background-color: transparent;
+	background-image: none;
+	background-image: none;
+}
+
+/*Clear Fix to Clear Floats*/
+.affinity-row:after {
+	visibility: hidden;
+	display: block;
+	content: "\0020";
+	clear: both;
+	height: 0;
+}
+
+/*Strctural wrapper for 2-column row*/
+.affinity-row .column-half {
+	width: 50%;
+	float: left;
+}
+
+/*Strctural wrapper for 3-column row*/
+.affinity-row .column-third {
+	width: 33.3333333%;
+	float: left;
+}
+/*Strctural wrapper for 4-column row*/
+.affinity-row .column-fourth {
+	width: 25%;
+	float: left;
+}
+/*Strctural wrapper for 5-column row*/
+.affinity-row .column-fifth {
+	width: 20%;
+	float: left;
+}
+
+/*Strctural wrapper for 2-column sidebar-left row*/
+.affinity-row.sidebar-left .column-1 {
+	width: 76%;
+	float: right;
+}
+.affinity-row.sidebar-left .column-2 {
+	width: 24%;
+	float: right;
+}
+.affinity-row.sidebar-left .column-content {
+	line-height: 1.5;
+}
+.affinity-row.sidebar-left .column-2 .column-content {
+	font-size: .9em;
+}
+
+/*Strctural wrapper for 2-column sidebar-right row*/
+.affinity-row.sidebar-right .column-1 {
+	width: 76%;
+	float: left;
+}
+.affinity-row.sidebar-right .column-2 {
+	width: 24%;
+	float: left;
+}
+.affinity-row.sidebar-right .column-content {
+	line-height: 1.5;
+}
+.affinity-row.sidebar-right .column-2 .column-content {
+	font-size: .9em;
+}
+.left-border {
+	border-left: 1px solid #000;
+}
+.right-border {
+	border-right: 1px solid #000;
+}
+.left-right-border {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+/*Column Content*/
+.column-content {
+	line-height: 1.35;
+	padding: 15px 24px;
+}
+.affinity-row.sidebar-right .column-content,
+.affinity-row.sidebar-left .column-content,
+.affinity-row.thirds.full-height .column-content {
+	padding: 30px;
+}
+/*Padding Management for Nested Rows*/
+.no-pad-left-top-bottom {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+}
+.no-pad-right-top-bottom {
+	padding-top: 0px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+}
+.no-pad-top-bottom {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+
+/*Headings*/
+h1, h2, h3, h4 {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	line-height: normal;
+	margin: 30px 0px 0px 0px;
+}
+.column-content h1:first-child,
+.column-content h2:first-child,
+.column-content h3:first-child,
+.column-content h4:first-child {
+	margin-top: 10px;
+}
+/*Use this class when you add a heading inside a row that contains multiple columns.*/
+.inner-row-heading {
+	position: relative;
+	top: 20px;
+	margin: 0px 0px 0px 24px;
+}
+
+/*Footer and Copyright*/
+.footer {
+	color: #000;
+	font-size: 0.8em;
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid;
+	border-color: #726561;
+	background-color: #857671 !important;
+	background-image: -webkit-linear-gradient(#857671, #5F5450) !important;
+	background-image: linear-gradient(#857671, #5F5450) !important;
+}
+.footer h3, .footer h4 {
+	font-family: "Droid Sans", Optima, "Segoe UI", Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 10px 0px 0px 0px;
+}
+.footer ul {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+}
+.footer li {
+	list-style-type: none;
+	line-height: 1.75;
+}
+.footer a {
+	color: #000;
+}
+.footer a:hover, .footer a:focus {
+	color: #CFC9C7;
+}
+.copyright {
+	font-size: 1em;
+	text-transform: none;
+	clear: both;
+	padding: 5px 10px 15px 20px;
+}
+
+
+/*Assign this class to set large text and the stylish Cuprum font*/
+.column-content.largesse, .largesse {
+	font-size: 1.25em;
+	line-height: 1.75em;
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+}
+/*Use this class to asign a black accent box around your content*/
+.affinity-row .blast {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	line-height: 1.75;
+	color: #BBB;
+	border-radius: 0px 0px 10px 10px;
+	padding: 28px 36px;
+	background: -webkit-linear-gradient(#333, #111);
+	background: linear-gradient(#333, #111);
+	background-color: #333;
+	margin-bottom: 20px;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
+/*Add the gray class to the blast class to make your accent box gray*/
+.affinity-row .blast.gray {
+	background: -webkit-linear-gradient(#EEE, #AAA);
+	background: linear-gradient(#EEE, #AAA);
+	background-color: #DDD;
+	color: #000;
+}
+.affinity-row.sidebar-left .column-content .blast,
+.affinity-row.sidebar-right .column-content .blast,
+.full-round {
+	border-radius: 6px !important;
+}
+/*1 Column for Narrow Browser Windows and Smartphones in both orientations*/
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+body {
+	margin: 0px;
+}
+.p7DMM03.p7DMM.p7dmm-left, .p7DMM03.p7DMM.p7dmm-right {
+	padding: 0px !important;
+}
+#layout {
+	max-width: none;
+	padding: 0px;
+}
+.column, .column-1, .column-2, .column-3,
+.column-half, .column-third, .column-fourth,
+.column-fifth {
+	float: none !important;
+	width: auto !important;
+}
+.column-content {
+	height: auto !important;
+	max-height: 888678px;
+	border: none !important;
+}
+}
+/*Medium windows - reduce padding content padding*/
+@media only screen and (min-width: 700px) and (max-width: 1380px) {
+#layout {max-width: none;}
+}
+#masthead_rr {
+	padding-bottom: 0px;
+	position: relative;
+	margin-top: 2px;
+}
+.affinity-row .blast_blue {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.75em;
+	line-height: 1.75;
+	color: #BBB;
+	border-radius: 0px 0px 10px 10px;
+	padding: 28px 36px;
+	background-color: #3B7FA6;
+	margin-bottom: 20px;
+}
+#masthead-left_softo {
+	float: left;
+	width: 98%;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.affinity-row .blastoutline {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	line-height: 1.75;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	margin-bottom: 15px;
+	border: thin solid #317EA9;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 28px;
+	padding-right: 36px;
+	padding-bottom: 20px;
+	padding-left: 36px;
+	background-color: #FFF;
+}
+.orange_head_cuprium16 {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	line-height: 115%;
+	color: #F7953D;
+}
+.orange_head_cuprium14F60 {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	line-height: 115%;
+	color: #F60;
+}
+.orange_head_cuprium14_drk {
+	color: #EC6523;
+}
+.orange_head_cuprium14_lt {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	line-height: 115%;
+	color: #F7953D;
+}
+.orange_head_cuprium16_drk {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	line-height: 115%;
+	color: #EC6523;
+}
+.orange_head_cuprium24 {
+	font-family: Cuprum, Optima, Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	line-height: 115%;
+	color: #F7953D;
+}

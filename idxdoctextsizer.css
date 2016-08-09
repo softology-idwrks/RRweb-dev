@@ -1,0 +1,18 @@
+.xsmallview /*CSS for "extra small font" setting*/
+{font-size: 11px;
+}
+
+.smallview{ /*CSS for "small font" setting*/
+font-size: 13px;
+}
+
+.normalview{ /*CSS to return page to default setting (with no additional CSS rules added)*/
+}
+
+.largeview .textblock{ /*CSS for "large font" setting*/
+font-size: 1.2em;
+}
+
+.xlargeview .textblock{ /*CSS for "extra large font" setting*/
+font-size: 1.5em;
+}

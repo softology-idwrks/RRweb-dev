@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#anchnavlist
+{
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 1px;
+	padding-top: 3px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-top: 5px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	height: 1.5em;
+}
+
+#anchnavlist a, #anchnavlist a:link, #anchnavlist a:visited
+{
+	padding-left: 0.5em;
+	padding-right: 1em;
+	color: #075381;
+	font-weight: bold;
+	text-decoration: none;
+	border-left-width: 2px;
+	border-left-style: dotted;
+	border-left-color: #628595;
+	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+#anchnavlist a:hover, #anchnavlist a:active, #anchnavlist a:focus
+{
+border: 1px solid #000000;
+padding: 1px;
+padding-left: 0.5em;
+padding-right: 1em;
+text-decoration: none;
+}
+
+#anchnavlist li
+{
+	padding-right: 1em;
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	line-height: 0.92em;
+	font-weight: bold;
+}
+
+#anchnavlist ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+#anchnavlist #active a { background-color: #FFCC66; }
+
+.anchnavbox {
+	width: 99%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+.anchnavbox2 {
+	width: 99%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}

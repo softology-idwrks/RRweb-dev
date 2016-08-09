@@ -1,0 +1,1613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Trouble Shooting RapidReader</title>
+
+
+<meta name="keywords" content="RapidReader, rapidreader, rapid reader, speedread, speedreading, accelerated reading, multiply readingspeed, speed-reading, speed-read, speed, speed read, PDF, Portable document format, Adobe, readability, Microsoft Office, Windows, Android, Blackberry, iOs, iPhone, iPad, iMac, Macintosh, Apple, Linux, mobile phone, cell phone, PDA, Palm OS, Symbian, Sony, Samsung, Nokia, Softology, Evernote, reading, read, rapid, books, e-zines, rapidreader, rapid-reader, newspaper,library,speed-reading software, law practice, study, graduate school, reading software, courses, corporate training, reading education, education, educational software, k-12, school, elementary, learning disabilities, dyslexia, attention defecit disorder, tutor, Low Vision, macular degeneration, Diabetes, Nystagmus, retinopathy, muscular dystrophy, spinal injury, presbyopia, eccentric viewing, steady eye technique " />
+<meta name="description" content="RapidReader takes the effort out of reading on any size screen. RapidReader's patented software will double or triple your on-screen reading speed in less than 5 minutes. It's easy. You just have to see it to believe it." />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73057279-1', 'auto');
+  ga('send', 'pageview');
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+<style type="text/css"> 
+
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLtHdr #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixLtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+
+
+<script type="text/javascript" src="p7pmm/p7PMMscripts.js"></script>
+<link href="p7pmm/p7PMMh04.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="p7epm/p7EPMscripts.js"></script>
+<link href="p7epm/epm1/p7EPM01.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="p7pmm/p7PMMh07.css" rel="stylesheet" type="text/css" media="all" />
+<link href="p7pmm/p7PMMh10.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="p7pmm/p7PMMh01.css" rel="stylesheet" type="text/css" media="all" />
+<link href="p7_cssexpress/p7exp/p7exp.css" rel="stylesheet" type="text/css" />
+
+<!--<link href="rr2_info_2col_lft.css" rel="stylesheet" type="text/css" />-->
+
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!--<link href="index2_11_text.css" rel="stylesheet" type="text/css" />
+<link href="index2_11.css" rel="stylesheet" type="text/css" />
+<link href="new_help.css" rel="stylesheet" type="text/css" />-->
+<link href="footernav.css" rel="stylesheet" type="text/css" />
+<!--<link href="rr_site_text.css" rel="stylesheet" type="text/css" />-->
+<style type="text/css">
+<!--
+a:link {
+	color: #4a4a4a;
+}
+a:visited {
+	color: #ea9c28;
+}
+a:hover {
+	color: #085A8C;
+}
+-->
+</style>
+<link href="anchnavlist.css" rel="stylesheet" type="text/css" />
+<link href="TEST_index2_11.css" rel="stylesheet" type="text/css" />
+<link href="rr_site_6_14txt.css" rel="stylesheet" type="text/css" />
+<link href="new_inner_page_info.css" rel="stylesheet" type="text/css" />
+
+<!--text resizer script must follow all exteral CSS sheets-->
+
+<link href="1coldoctextsizer.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="doctextsizer.js">
+
+/***********************************************
+* Document Text Resizer Script- by JavaScript Kit (www.javascriptkit.com)
+* This <strong>NO</strong>tice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<style type="text/css">
+
+</style>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+
+</head>
+
+<body onload="../P7_ExpMenu()','MM_preloadImages('../images_rrhelp/freetrial_over.png','../images_rrhelp/answers_over.png','../images_rrhelp/rr_lib_icon_on_200.png','../images_rrhelp/close_butt_over.jpg','../images_rrhelp/home_butt_over.jpg')">
+<div id="containerinner">
+  <div id="headerinner">
+    <div id="logohead"><a href="index.html"><img src="images_rrfree_fin/new_rr_logo_head.jpg" alt="RapidReader Created for Accelerated Reading Home" width="411" height="108" border="0" /></a></div>
+	<div id="new2_topnavwrap"> 
+	  <div id="p7PMM_1" class="p7PMMh04">
+	    <ul class="p7PMM">
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_prod.jpg" width="130" height="30" alt="RapidReader Products" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="abt_rr_pro.html">RR PRO for PDF</a></li>
+	            <li><a href="abt_rr_free.html">RR Standard FREE</a></li>
+                <li><a href="head_to_head.html">RR PRO vs. Standard</a></li>
+	            <li><a href="rr_mobile.html">Products for Mobile and Tablets</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_about.jpg" width="74" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="what_is_rr.html">What is RapidReader?</a></li>
+	            <li><a href="faq.html">FAQ</a></li>
+	            <li><a href="rr_science.html">The Science Behind RR</a></li>
+                <li><a href="low_vis.html">RR for Low Vision</a></li>
+                <li><a href="learn_dis.html">RR for Learning Disabilities</a></li>
+	            <li><a href="scrnshots.html">Screen Shots</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_buy.jpg" width="54" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="https://rapidreader.com/sub/index.php?option=com_hikashop&ctrl=product&task=updatecart&quantity=1&checkout=1&product_id=1">Buy From Our Secure Store</a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_video.jpg" width="70" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="rr_vid.html">Links to Video </a></li>
+              </ul>
+            </div>
+          </li>
+	      <li><a href="#" class="p7PMM_img"><img src="Fireworks/1_nav_support.jpg" width="78" height="30" alt="" /></a>
+	        <div>
+	          <ul>
+	            <li><a href="help_contents.html">Help Contents</a></li>
+	            <li><a href="help_install.html">Installation</a></li>
+	            <li><a href="troubleshoot.html">Trouble Shooting</a></li>
+	            <li><a href="support.html">Support</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="p7pmmclearfloat">&nbsp;</div>
+        <!--[if lte IE 6]>
+<style>.p7PMMh04 ul ul li {float:left; clear: both; width: 100%;}.p7PMMh04 {text-align: left;}.p7PMMh04, .p7PMMh04 ul ul a {zoom: 1;}</style>
+<![endif]-->
+        <!--[if IE 5]>
+<style>.p7PMMh04, .p7PMMh04 ul ul a {height: 1%; overflow: visible !important;} .p7PMMh04 {width: 100%;}</style>
+<![endif]-->
+        <!--[if IE 7]>
+<style>.p7PMMh04, .p7PMMh04 a{zoom:1;}.p7PMMh04 ul ul li{float:left;clear:both;width:100%;}</style>
+<![endif]-->
+        <script type="text/javascript">
+<!--
+P7_PMMop('p7PMM_1',1,0,-5,-5,0,0,1,1,0,1,1,1,0,0);
+//-->
+        </script>
+      </div>
+</div>
+	<!-- end #headerinner -->
+	<!--</div>-->
+	<div id="new_innerheadbot_home">
+	  <div id="new_free_dl_inner"><a href="abt_rr_free.html"><img src="images_rrfree/rr_free_inner_219x56_off2.jpg" alt="Download RapidReader Free" width="219" height="56" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images_rrfree/rr_free_inner_219x56_over2.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+	  <!--<div id="inner_rr_free_box"><img src="images_rrfree/rr_free_dwl_off155.png" alt="Click here for free download of RapidReader Standard" width="100" height="100" id="Image2" onmouseover="MM_swapImage('Image2','','images_rrfree/rr_free_dwl_over155.png',1)" onmouseout="MM_swapImgRestore()" /></div>-->
+	  <p>&nbsp;</p>
+	  <!--BACK BUTTON NEEDS LINK TAG TO PREVIOUS PAGE--><div id="homebutt_v2"><a href="javascript: history.go(-1)"><img src="images_rrfree/back_buttV6.jpg" alt="Return to the Power User Page" width="74" height="33" id="Image1" onmouseover="MM_swapImage('Image1','','images_rrfree/back_buttV6_over.jpg',1)" onmouseout="MM_swapImgRestore()" /></a></div>
+  </div>
+    <!-- end #header -->
+  </div>
+  <a name="TOP" id="TOP"></a>
+  <div id="new_help_tablecontainer">
+  <h1 class="headboxfloatornge">Troubleshooting Guide</h1>
+    <div class="tableinner">
+      <td><table width="100%" border="0" cellspacing="2" cellpadding="2">
+        <tr>
+          <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="3" cellspacing="1">
+            <tbody>
+              <tr align="left" valign="top">
+                <td width="100%"
+                colspan="2" align="left" class="header4arial313163">Answers for 
+                  Some Potential Issues: </td>
+              </tr>
+              <tr align="left" valign="top">
+                <td
+                colspan="2" align="left" class="bullettextboldblack14"><hr/></td>
+              </tr>
+              <tr>
+                <td
+                colspan="2"><a name="topics" id="topics"></a>
+                <h3 class="bullettextboldBLU">If you have  any installation issues <a href="help_install.html">please click here for information:</a> </h3>
+                <h3 class="bullettextboldBLU">If you encounter any difficulties 
+                  other than those covered here, please contact<a href="mailto:support@rapidreader.com"> tech support</a></h3></td>
+              </tr>
+              <tr align="left">
+                <td colspan=
+                "2" align="left"><hr/></td>
+              </tr>
+              <tr align="left">
+                <td colspan=
+                "2" align="left"><table width="95%" border="0" align="center" cellpadding="2" cellspacing="4">
+                  <tr valign="top">
+                    <td colspan="2" align="left"><table width="100%" border="0" cellspacing=
+                      "3" cellpadding="3">
+                      <tr>
+                        <td width="2%"><img src="rr_help/images/BLU-ARROW12_14.png" alt=""
+                            width="12" height="14" /></td>
+                        <td width="98%" class=
+                          "bullettextboldBLU"><font color="#333333">HELP 
+                          TOPICS</font></td>
+                        <td><div align="right"><img src="rr_help_images/pixel_20.gif" alt="" width="15" height="15" /> </div></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr valign="top">
+                    <td colspan="2" align="left" ><img src="rr_help_images/Blue-Grad-fadedots2.jpg" alt="" width="450" height="2" /></td>
+                  </tr>
+                  <tr>
+                    <td width="4%" align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#rrbutton">The RapidReader Button didn't 
+                      load on the menu bar of MS Word</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#iebutton">I don't see 
+                      the RapidReader Button on my Internet Explorer Tool 
+                      Bar</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#openpdf">I don't see 
+                      the RapidReader Button on my Adobe Acrobat Tool Bar 
+                      to open a PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#pdfwontopen" class=
+                                  "rrparagraph2clr">Some PDF's won't open in RapidReader</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#clipboardfail" class=
+                                  "rrparagraph2clr">When I click the RapidReader 
+                      Button on a web page I get the message <b>&quot;clipboard 
+                        failed to open&quot;</b></a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#notext" class=
+                                  "rrparagraph2clr">When I click the RapidReader 
+                      Button on a web page I get the message <b>&quot;unable to 
+                        parse files of this type&quot;</b></a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#notextrtf" class=
+                                  "rrparagraph2clr">When I click the RapidReader 
+                      Button in MS Word, I get the message <b>&quot;unable to parse 
+                        files of this type&quot;</b></a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#weirdtext" class=
+                                  "rrparagraph2clr">In TurboView some pages display 
+                      weird characters.</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#textbreaks" class=
+                                  "rrparagraph2clr">In TurboView the text will 
+                      stop briefly after each line.</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#startstory" class=
+                                  "rrparagraph2clr">When I open a web page in 
+                      RapidReader I get a long list of &quot;stuff&quot; before the 
+                      story starts</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#cantedit" class=
+                                  "rrparagraph2clr">I can't edit or copy the text 
+                      in the RapidReader ParagraphView</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#notesdisappear" class=
+                                  "rrparagraph2clr">When I reopened RapidReader 
+                      my User-Notes and Highlites disappeared</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#otherbrowsers" class=
+                                  "rrparagraph2clr">I don't see the RR Button 
+                      on my other browsers. How do I use RapidReader?</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#notepad" class=
+                                  "rrparagraph2clr">There is no RapidReader Button 
+                      displayed on WordPad or Notepad. How do I use RapidReader?</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#wordprocessors" class=
+                                  "rrparagraph2clr">How do I use RapidReader with 
+                      Word Perfect or other Word Processor Programs?</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle"><img src="images_rrfree/Orange-Arrow15.jpg" width="16" height="14" alt="picture of arrow" /></td>
+                    <td class="grayh5"><a href="#appintegration">How 
+                      do I remove the RapidReader Button on MS Word or Internet 
+                      Explorer?</a></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="middle">&nbsp;</td>
+                    <td >&nbsp;</td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr align="left" valign="top">
+                <td colspan=
+                "2" align="left" class="bullettextboldBLU"><img src="rr_help_images/lt-gray-gradient-bar-6.png" alt=""
+                  width="100%" height="3" /></td>
+              </tr>
+              <tr align="center" valign="top">
+                <td colspan=
+                "2" align="center" class="bullettextboldBLU"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldBLU"><a name="rrbutton" id="rrbutton">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldBLU"> RR 
+                        Button didn't load in MS Word or Explorer:<br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><p> When you install 
+                        RapidReader it loads with an <a href="#appintegration">&quot;App 
+                          Integration&quot;</a> tool which controls the ability 
+                        to access RapidReader within a given application 
+                        such as MS Word and Internet Explorer. This is so 
+                        you can open RapidReader directly from the tool 
+                        bar of those applications. If upon installation 
+                        the RapidReader item does not appear please see 
+                        below. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style='padding:.75pt .75pt .75pt .75pt'
+                        class="MsoNormalTable"><h4 class="bullettextboldBLU"> MS Internet Explorer </h4></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style='padding:.75pt .75pt .75pt .75pt'
+                        class="MsoNormalTable"><p class="rrparagraph2black"> There are no known issues with the RapidReader MS 
+                        Internet Explorer integration at this time. If you 
+                        feel an issue has been identified, then please contact <a href=
+                            "mailto:techsupport@textvision.net">support</a>. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style='padding:.75pt .75pt .75pt .75pt'
+                        class="MsoNormalTable"><h4 class="bullettextboldBLU"> MS Word </h4></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style='padding:.75pt .75pt .75pt .75pt'
+                        class="MsoNormalTable"><p class="rrparagraph2black"> Q: After clicking the 'Install' button, the RapidReader 
+                        button is not present on the toolbar. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><div class="Section1">
+                        <table class="MsoNormalTable" border=
+                            "0" cellpadding="0" style=
+                            'mso-cellspacing:1.5pt'>
+                          <tr style='mso-yfti-lastrow:yes'>
+                            <td style=
+                                'padding:.75pt .75pt .75pt .75pt'><table class="MsoNormalTable"
+                                  border="0" cellpadding="0" style=
+                                  'mso-cellspacing: 1.5pt'>
+                              <tr>
+                                <td style=
+                                      'padding:.75pt .75pt .75pt .75pt'><p class="rrparagraph2black"> A: Two possible reasons can exist 
+                                  for the button not being present. </p>
+                                  <table class=
+                                        "MsoNormalTable" border="0"
+                                        cellspacing="10"
+                                        cellpadding="0" style=
+                                        'mso-cellspacing:7.5pt'>
+                                    <tr>
+                                      <td nowrap="nowrap" valign="top"
+                                            style=
+                                            'padding:.75pt .75pt .75pt .75pt'><p class=
+                                            "rrparagraph2black"> Answer 1: </p></td>
+                                      <td style=
+                                            'padding:.75pt .75pt .75pt .75pt'><p class=
+                                            "rrparagraph2black"> MS Word was not 
+                                        restarted after the Install 
+                                        button was clicked. Restart 
+                                        the application and see if the 
+                                        RapidReader button is now present 
+                                        in the toolbar. </p></td>
+                                    </tr>
+                                    <tr style=
+                                          'mso-yfti-lastrow:yes'>
+                                      <td nowrap="nowrap" valign="top"
+                                            style=
+                                            'padding:.75pt .75pt .75pt .75pt'><p class=
+                                            "rrparagraph2black"> Answer 2: </p></td>
+                                      <td style=
+                                            'padding:.75pt .75pt .75pt .75pt'><p class=
+                                            "rrparagraph2black"
+                                            style=
+                                            'margin-bottom:12.0pt'> <b>Enable 
+                                        &quot;Trusted Publisher&quot; in MS Word 
+                                        to allow RapidReader.</b></p>
+                                        <p class=
+                                              "rrparagraph2black"
+                                              style=
+                                              'margin-bottom:12.0pt'> <b>Background <span class="GramE"> :</span></b><br />
+                                          The security level in MS Word 
+                                          is keeping the RapidReader add-in 
+                                          from being loaded at startup. 
+                                          Many people have their security 
+                                          setting within Word to be either 
+                                          High or Very High, and understandably 
+                                          so because macros can maliciously 
+                                          affect a computer. Softology 
+                                          understands this concern and 
+                                          is in the process of obtaining 
+                                          a digital certificate from a 
+                                          registered and trusted Certificate 
+                                          Authority, such as <span class=
+                                                "SpellE">Verisign</span>. Until 
+                                          that time, the RapidReader Add-In 
+                                          does not have an accompanying 
+                                          digital certificate &quot;signing&quot; 
+                                          the Add-In.<br />
+                                          <br />
+                                          To view your security level 
+                                          setting, open Word and click 
+                                          the Tools-&gt;Macro-&gt;Security 
+                                          menu item. On older versions 
+                                          of MS Word, you may not see 
+                                          a menu item named 'Security' 
+                                          in this location. You can always 
+                                          navigate to the Security dialog 
+                                          by clicking the Tools-&gt;Options 
+                                          menu item. The 'Options' dialog 
+                                          will appear. Click the tab titled 
+                                          'Security'. At the bottom of 
+                                          the tab you should see a button 
+                                          titled 'Macro Security'. Click 
+                                          this tab and the Security dialog 
+                                          will be displayed. The Security 
+                                          dialog consists of two tabs, 
+                                          'Security Level' and 'Trusted 
+                                          Publishers'.<br />
+                                          <br />
+                                          Since a digital certificate 
+                                          does not yet exist to show Softology 
+                                          as a &quot;Trusted Publisher&quot; in 
+                                          this named tab, the add-in may 
+                                          not be loaded at startup, depending 
+                                          upon the security level selection 
+                                          in the first tab.<br />
+                                          <br />
+                                          <b>Solution:</b><br />
+                                          The security setting can remain 
+                                          &quot;High&quot; to guard against other 
+                                          malicious users, but the checkbox 
+                                          in the &quot;Trusted Publishers&quot; 
+                                          tab called &quot;Trust all installed 
+                                          add-ins and templates&quot; must 
+                                          be checked for the RapidReader 
+                                          MS Word Add-In to successfully 
+                                          load at startup (the image below 
+                                          shows this checkbox circled). 
+                                          After checking this box, click 
+                                          the &quot;OK&quot; button to save your 
+                                          dialog settings and restart 
+                                          the MS Word application. You 
+                                          should see the RapidReader button 
+                                          present in the toolbar now. 
+                                          If you don't, then <span class=
+                                                "GramE">shutdown Word, <a href=
+                                                "#appintegration">click</a></span> <a href=
+                                                "#appintegration">the &quot;Uninstall&quot; 
+                                            button in the &quot;MS Word Add-In 
+                                            Integration&quot; tab</a>, click 
+                                          the &quot;Install&quot; button, and restart 
+                                          MS Word. Contact <a href=
+                                                "mailto:techsupport@textvision.net"> support</a> if you have followed 
+                                          the above steps and still fail 
+                                          to see the RapidReader button.<br />
+                                          <br />
+                                          <b>Screenshots:</b><br />
+                                          RapidReader Button on Microsoft 
+                                          Word Toolbar:<br />
+                                          <img
+                                                src="rr_help/images/image001.png" alt="" border="0" /> <br />
+                                          <br />
+                                          <br />
+                                          Security Dialog with Trusted 
+                                          Publishers tab selected:<br />
+                                          <img
+                                                src="rr_help/images/image003.png" alt="" border="0" /> <br />
+                                        </p></td>
+                                    </tr>
+                                  </table>
+                                  <p class="MsoNormal">&nbsp; </p></td>
+                              </tr>
+                              <tr style=
+                                    'mso-yfti-lastrow:yes'>
+                                <td style=
+                                      'padding:.75pt .75pt .75pt .75pt'><p class="MsoNormal">&nbsp; </p></td>
+                              </tr>
+                            </table>
+                              <p class="MsoNormal">&nbsp; </p></td>
+                          </tr>
+                        </table>
+                        <p class="MsoNormal">&nbsp; </p>
+                      </div></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><table width="100%" border="0"
+                          cellspacing="2">
+                        <tr>
+                          <td width="29%" class=
+                              "bullettextboldBLU"><a name="appintegration" id=
+                                "appintegration">&nbsp;</a></td>
+                          <td width="71%" align="right" class=
+                              "rrparagraph2clr">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="29%" class=
+                              "bullettextboldBLU"> The Add-In Integration Utility </td>
+                          <td width="71%" align="right" class=
+                              "rrparagraph2clr">&nbsp;</td>
+                        </tr>
+                        <tr valign="top">
+                          <td width="29%" valign="top" align=
+                              "center" bgcolor="#999999"><div align="left"> <img src="rr_help/images/RRAppInt_IE.png" alt=""
+                                  width="240" height="250" /></div></td>
+                          <td width="71%" valign="top" align=
+                              "center" rowspan="2"><table width="100%" border="0"
+                                cellpadding="2" cellspacing="3">
+                            <tr>
+                              <td ><p> The Add-In 
+                                Integration Utility is included automatically 
+                                as part of the installation process 
+                                for RapidReader. It is located in the 
+                                Softology program folder. </p>
+                                <p> To access it go to Start &gt; Programs 
+                                  &gt; SoftOlogy &gt; RapidReader App 
+                                  Integration, then double-click on App 
+                                  Integration Utility. This has two tabs, 
+                                  one for Internet Explorer and the other 
+                                  for MS Word. With this utility you can 
+                                  install or uninstall the RapidReader 
+                                  Button on the appropriate application. </p>
+                                <p> For the procedure click on the <b>&quot;Help&quot;</b> item on the Utility </p></td>
+                            </tr>
+                            <tr>
+                              <td><p> <b>For more information about the RR Button installation please see<a href=
+                                        "#topics">Topics</a> above</b></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr valign="top">
+                          <td width="29%" valign="middle"
+                              align="center">&nbsp;</td>
+                        </tr>
+                      </table></td>
+                      <td width="4%" valign="top" align="right"><a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td class="bullettextboldblack14"
+                colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldclear"><a name="iebutton" id="iebutton">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">I 
+                        can't see the RapidReader Button on the Tool Bar in 
+                        Internet Explorer:</span><br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><p class="rrparagraph2black"> Sometimes depending on how many 
+                        tools you have loaded, the size of the icons and 
+                        the way you customize your Browser, the RapidReader 
+                        Icon may be hidden in the default tool bar. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tr>
+                          <td width="3%" valign="top">&nbsp;</td>
+                          <td width="97%" bgcolor="#999999"><table width="100%" border="0"
+                                cellspacing="2">
+                            <tr>
+                              <td width="4%"><img src=
+                                      "rr_help/images/RR_icon_only_crop.png" alt=""
+                                      width="34" height="32" /></td>
+                              <td width="96%" valign="bottom"
+                                    class="rrparagraph2black"><img src=
+                                      "rr_help/images/IE-tool-bar-crop.png" alt=""
+                                      width="400" height="23" />The RR Icon on IE 
+                                Tool Bar </td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> To see if it is hidden, <b>on the IE toolbar Click</b> on the arrows 
+                              to the right of the tool bar to expand it </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU">&nbsp;</td>
+                            <td width="97%" class=
+                                "rrparagraph2black"><b>OR</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Modify the toolbar item 
+                              locations by customizing the toolbar. The 
+                              customization dialog can be viewed from the 
+                              View &gt; Toolbars &gt; Customize menu item. </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top">&nbsp;</td>
+                            <td width="97%" class=
+                                "rrparagraph2black"><span style="font-weight: bold;"
+                                  class=
+                                  "bullettextboldBLU">NOTE:</span> If neither of these work, 
+                              see the information about <a href=
+                                  "#appintegration">&quot;add in integration&quot;</a> above </td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="top"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="openpdf" id="openpdf">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">I 
+                        don't see the RapidReader Button on Adobe Acrobat 
+                        to open a PDF:</span><br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top"><p> The app integration utility doesn't 
+                        place a button on the Adobe Acrobat tool bar. 
+                        To open a PDF in RapidReader you will drag and drop 
+                        the PDF file icon onto the RapidReader Desktop Icon. 
+                        You can then have the original PDF open to go back 
+                        and forth between the RapidReader view and any pictures 
+                        or graphics contained in the original PDF. Simply 
+                        press the spacebar in RapidReader to stop then minimize 
+                        it to view the PDF.</p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" class="rrparagraph2"><table width="100%" border="0"
+                          cellspacing="2">
+                        <tr valign="top">
+                          <td width="68%" rowspan="2" align="left" bgcolor="#FFFFFF"><p align="left"><br />
+                            <img src="rr_help_images/BLU-ARROW12_14.png" alt="" width="12" height="14" /> <strong>&quot;Drag and Drop&quot;</strong> All supported file types. .txt, MS Word, PDF. <br />
+                            To RapidRead a <strong><font color="#085A8C">*PDF</font></strong>. 
+                            Simply<strong> &quot;Drag and Drop&quot;</strong> it onto the RapidReader PRO desktop Icon. 
+                            You don't even have to open Adobe Acrobat 
+                            at all.</p>
+                            <p align="left">RR PRO uses an artificial intelligence 
+                              engine to analyze the PDF to extract the text 
+                              and import it into RapidReader for you. This 
+                              may take some time depending on the length 
+                              of the document. You will see the hour glass 
+                              and a dialogy box in RapidReader to let you 
+                              know that it is analyzing and parsing the 
+                              file.</p>
+                            <p align="left"><span class="bullettextboldBLU">Please 
+                              NOTE:</span> PDF files cannot be opened by 
+                              RapidReader through a browser. The PDF file 
+                              must be local to your machine</p>
+                            <p align="left"><font color="#085C8a"> *PDF support only available in RR PRO </font></p></td>
+                          <td width="32%" valign="top" align=
+                              "center" rowspan="2"><table width="100%" border="0"
+                                cellpadding="2" cellspacing="3">
+                            <tr>
+                              <td class="rrparagraph2black"><p align="center"> <img src="rr_help/images/pdf_drag_123.png" alt="" width="165" height="165" /></p></td>
+                            </tr>
+                            <tr>
+                              <td class="bullettextboldBLU"><p> <b> </b></p></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr valign="top"> </tr>
+                      </table></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="pdfwontopen" id="pdfwontopen">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">PDF 
+                        won't open in RapidReader</span></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top"><p> <strong>This may happen for 
+                        three reasons</strong></p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> The PDF document is <strong>encrypted 
+                              or password</strong> protected</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td class=
+                                "rrparagraph2black"> The PDF is actually an <strong>image </strong>of a document and contains no text</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td class=
+                                "rrparagraph2black"> The PDF is <strong>not local</strong> to your machine. RapidReader cannot analyze 
+                              a PDF through a browser.</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU">&nbsp;</td>
+                            <td class=
+                                "rrparagraph2black">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU">&nbsp;</td>
+                            <td width="97%" class=
+                                "bullettextboldBLUsm"> Important Note: Analyzing 
+                              and Parsing a lengthy PDF may take a little 
+                              while and it may appear as if RapidReader 
+                              is frozen. Please move the mouse and if the 
+                              cursor is the &quot;hour glass&quot; then 
+                              RapidReader is still processing the document.</td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="top"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldclear"><a name="clipboardfail" id="clipboardfail">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">I 
+                        get a &quot;clipboard failed to open&quot; message when 
+                        I try to use the RR button from IE or MS Word:</span><br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top" class="rrparagraph2"><p class="rrparagraph2black"> MS Office has a special 
+                        clipboard feature that allows for multiple selections 
+                        to be copied and pasted before the clipboard is 
+                        cleared. This is separate from the Windows System 
+                        clipboard and behaves differently. After a certain 
+                        number of entries the Office clipboard will not 
+                        allow for any more. This will result in the &quot;openClipboard 
+                        failed&quot; message when you use the RapidReader 
+                        button for Internet Explorer and MS Word. To eliminate 
+                        the message and use RR's full functionality, it 
+                        is necessary to turn off the Office clipboard feature 
+                        when using RapidReader. This will allow the clipboard 
+                        to be emptied and a new document to be placed there 
+                        for RapidReader to access. If you wish you can easily 
+                        turn the Office clipboard back on.</p>
+                        <p class="bullettextboldBLU">To turn off the Office 
+                          Clipboard Feature</p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top" class="rrparagraph2"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Launch <strong>MS Word</strong></td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td class=
+                                "rrparagraph2black"> On the menu bar go to<strong> View&gt; Task Pane</strong>. The task pane 
+                              will typically appear to the right. </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td class=
+                                "rrparagraph2black"> In the Task Pane <strong>Click 
+                              in the top bar and select &#8220;Clipboard&#8221;</strong>. 
+                              At the bottom of the new window you will see <strong>&#8220;Options&#8221;</strong>. Click 
+                              for menu</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 4) </td>
+                            <td class=
+                                "rrparagraph2black"><strong>From the menu UNCHECK:</strong> <br />
+                              The Show Office Clipboard Automatically check 
+                              box. AND The Show Office Clipboard When Ctrl+C 
+                              Pressed Twice check box. </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 5) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"><strong>Close MS Word</strong>. 
+                              The next time you launch it your clipboard 
+                              preferences will be active for RapidReader. </td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="notext" id="notext">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">&quot;Unable 
+                        to Parse Files of This Type&quot; when I try to use RR 
+                        from a web page:</span><br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><p> This error message usually happens at high traffic 
+                        sites where content is changing constantly. Frequently 
+                        these are news or entertainment sites. The text 
+                        isn't available &quot;locally&quot; on your machine because 
+                        of the way their server delivers the page to your 
+                        browser. It may also happen if there are elements 
+                        on the web page such as forms or other kinds of 
+                        interactive items. To access this page for RapidReader... 
+                        . </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Select the <b>&quot;Printer Friendly&quot;</b> page option on the web page </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td class=
+                                "rrparagraph2black"> From there follow the normal 
+                              procedure for RapidReading from your browser. </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU">&nbsp;</td>
+                            <td class=
+                                "rrparagraph2black"><span class="bullettextboldBLU">OR, 
+                              if there is no printer friendly view</span>..</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 1) </td>
+                            <td class=
+                                "rrparagraph2black"> Drag and click to select 
+                              the text </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td class=
+                                "rrparagraph2black"> Press <strong>CTL+C </strong>to 
+                              copy the text to the clipboard</td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Launch RapidReader and Press <strong>CTL+V</strong> to paste the text into 
+                              RapidReader. </td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="top"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldclear"><a name="notextrtf" id="notextrtf">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">&quot;Unable 
+                        to Parse Files of This Type&quot; when I try to use RR 
+                        from MS Word:</span><br /></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top"><p class="rrparagraph2black"> <strong>The MS Word document 
+                        is probably in the RTF format which is not natively 
+                        parsed by RapidReader. To access this document for 
+                        RapidReader...</strong> . </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left" valign="top" class="rrparagraph2"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 1) </td>
+                            <td class=
+                                "rrparagraph2black"> Drag and click to select 
+                              the text </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td class=
+                                "rrparagraph2black"> Press <strong>CTL+C </strong>to 
+                              copy the text to the clipboard</td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Launch RapidReader and Press <strong>CTL+V</strong> to paste the text into 
+                              RapidReader.</td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class=
+                        "bullettextboldclear"><a name="weirdtext" id="weirdtext">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><span class="bullettextboldBLU">Some 
+                        pages display weird text characters</span></td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><p class="rrparagraph2black"> Some text elements may not be displayed properly 
+                        in RapidReader. These might include special characters 
+                        within the original document such as bullets or 
+                        currency symbols or language specific elements. 
+                        It may be that your machine doesn't have the required 
+                        font loaded. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="textbreaks" id="textbreaks">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> In TurboView 
+                        the text will stop briefly after each line. </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><p class="rrparagraph2black"> RapidReader automatically interprets the construction 
+                        of the text in a document to create the rhythm of 
+                        human speech from the text flow. For most of the 
+                        documents that you will encounter the text will 
+                        be set to &quot;wrap&quot; from line to line as a paragraph. 
+                        This allows for the typical RapidReader experience. 
+                        However in some cases, the original document was 
+                        formatted to put a &quot;hard carriage return&quot; at the 
+                        end of each line. This is a throw back to the old 
+                        days of typewriters. You will occasionally find 
+                        this if for instance, a book or document was originally 
+                        scanned from a paper copy by an OCR (optical character 
+                        recognition) program. Some of the prominent free 
+                        electronic book initiatives available on the internet 
+                        have adopted this protocol. If that is the case, 
+                        there may be an HTML version of the book available 
+                        online which will have a &quot;wrap&quot; format. This will 
+                        eliminate the problem in RapidReader. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="startstory" id="startstory">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> When I open 
+                        a web page in RapidReader I get a long list of &quot;stuff&quot; 
+                        before the story content </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"> <p class="rrparagraph2black"> Most web 
+                        pages will have navigation or advertising items in 
+                        addition to the content you're interested in. You can import the entire page using Select All/Copy/Paste into RapidReader. Once 
+                        in RapidReader, you can begin RapidReading from the 
+                        story by double clicking on a word where you want to begin.  </p>
+                        <p class="rrparagraph2black">However there  are some  easy ways to get &quot;clean text&quot; from a web page. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><table width="100%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> In the <b>Web Page,</b> <b>scroll down</b> to the article or story you want to read. </td>
+                          </tr>
+                          <tr>
+                            <td valign="top"><span class="bullettextboldBLU">2)</span></td>
+                            <td class=
+                                "rrparagraph2black"><strong>Click and Drag</strong> the mouse to select the story</td>
+                          </tr>
+                          <tr>
+                            <td valign="top"><span class="bullettextboldBLU">3)</span></td>
+                            <td class=
+                                "rrparagraph2black">Launch RapidReader and <strong>Paste (CTL+V)</strong></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU">4) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> <strong>Double-click</strong> on a word in the RapidReader Window. 
+                              TurboView will begin RapidReading from there. </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class=
+                                "bullettextboldBLU">&nbsp;</td>
+                            <td class=
+                                "rrparagraph2black">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" valign="top"><p class="bullettextboldBLUsm">There are also free helper applications available to clean up the text please <a href="use_opendoc.html">click here</a> for more information.</p></td>
+                            </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr size="3" /></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="cantedit" id="cantedit">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> I can't edit 
+                        or copy the text in the RapidReader ParagraphView </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><p class="rrparagraph2black"> Although the RapidReader ParagraphView looks like 
+                        a word processor page, it is in fact a &quot;read only&quot; 
+                        document and the text is not directly editable. 
+                        To copy text you must use the <a href=
+                            "usingnote.html"><strong>Highliter feature</strong></a> and save your 
+                        Highlites. This will create a separate text file 
+                        copy of your Highlites. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="notesdisappear" id=
+                          "notesdisappear">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> When I reopened 
+                        RapidReader, my User-Notes and Highlites disappeared </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><p class="rrparagraph2black"> If you Quit rather than &quot;minimize&quot; RapidReader as 
+                        you view a document, your Notes and Highlites will 
+                        be lost. You must save either the entire document 
+                        as an .r2d file or use the Save Notes and Highlites 
+                        functions.<strong> <a href="usingnote.html">See Using Notes 
+                          and Highlites</a></strong></p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><a name="otherbrowsers" id=
+                          "otherbrowsers">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> I don't see 
+                        the RR Button on my other browsers. How do I use RapidReader? </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><p class="rrparagraph2black"> Currently RapidReader integration is supported only 
+                        in Microsoft Internet Explorer. Please check the 
+                        web site for updates that will include integration 
+                        into other browsers such as Firefox. To use RapidReader 
+                        with a non-supported browser: </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%"><table width="95%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Click in the <b>web page</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Click on <b>Edit &gt; Select 
+                              All (Ctl+A)</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Then <b>Select &gt; Copy 
+                              (Ctl+C)</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 4) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> This will place the text 
+                              on the clipboard. </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 5) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> In RapidReader Menu Bar Click <b>File &gt; Open From Clipboard</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 6) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> This will display the text 
+                              in RapidReader ParagraphView </td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left"><a name="notepad" id="notepad">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> There is 
+                        no RapidReader Button displayed on WordPad or Notepad. 
+                        How do I use RapidReader? </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="rrparagraph2"><p class="rrparagraph2black"> RapidReader currently doesn't place an integrated 
+                        button in Notepad or WordPad. But if you save from 
+                        either application as a text (.txt) file you can 
+                        simply &quot;drag and drop&quot; the document onto the RapidReader 
+                        desktop Icon. Or you can use File &gt; Open from 
+                        RapidReader. </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td colspan="2"><table width="100%" border="0" cellpadding="3">
+                  <tbody>
+                    <tr>
+                      <td width="96%"><hr/></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left"><a name="wordprocessors" id=
+                          "wordprocessors">&nbsp;</a></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" class="bullettextboldBLU"> How do I 
+                        use RapidReader with Word Perfect or other Word Processor 
+                        Programs? </td>
+                      <td width="4%"><div align="right"> <a href="#topics"><img src="images/top_button_32.png" align="right" border="0"width="32" height="32" alt="go to the top of the page" /></a></div></td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left"><p class="rrparagraph2black"> Currently integration is only supported in Microsoft 
+                        Word. Please check the web site for updates that 
+                        will include integration into other word processor 
+                        programs. To use RapidReader with a non-supported 
+                        word processor applicaton: </p></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="96%" align="left"><table width="95%" border="0"
+                          cellpadding="2" cellspacing="2" align=
+                          "center">
+                        <tbody>
+                          <tr>
+                            <td width="3%" valign="top"><div align="left" class=
+                                  "bullettextboldBLU"> 1) </div></td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Either Save the document 
+                              as a text file (.txt) and follow the &quot;drag 
+                              and drop&quot; procedure </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top">&nbsp;</td>
+                            <td width="97%" class=
+                                "rrparagraph2black"><b>OR</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 2) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> In the document applicationClick 
+                              on <b>Edit &gt; Select All (Ctl+A)</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 3) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> Then <b>Select &gt; Copy 
+                              (Ctl+C)</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 4) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> This will place the text 
+                              on the clipboard. </td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 5) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> In RapidReader Menu Bar Click <b>File &gt; Open From Clipboard</b></td>
+                          </tr>
+                          <tr>
+                            <td width="3%" valign="top" class=
+                                "bullettextboldBLU"> 6) </td>
+                            <td width="97%" class=
+                                "rrparagraph2black"> This will display the text 
+                              in RapidReader ParagraphView </td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                      <td width="4%">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr align="left" valign="top">
+                <td
+                colspan="2" align="left"><div align="left"><img src="rr_help_images/Blue-Grad-fadedots2.jpg" alt="" width="509" height="2" /> </div></td>
+              </tr>
+              <tr>
+                <td colspan="2"><div align="center"> </div></td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+      <tr>
+        <td align="left" valign="top"><hr/></td>
+      </tr>
+    </div>
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <br class="clearfloat" />
+  <div id="footer">
+  <div id="rrlibbox">
+        <div id="p7PMM_6" class="p7PMMh07">
+          <ul class="p7PMM">
+            <li><a href="#" class="p7PMM_img"><img src="images2/rr_lib_icon_200.png" width="200" height="35" alt="Visit the Free RapidReader Library!" /></a>
+              <div>
+                <ul>
+                  <li><a href="http://www.rapidreaderlibrary.com">Visit the RapidReader FREE Library.<br/>
+                    Hundreds of books for your computer or mobile.</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="p7pmmclearfloat">&nbsp;</div>
+          <!--[if lte IE 6]>
+<style>.p7PMMh07 .current_mark {font-weight: normal; text-transform: uppercase;} .p7PMMh07 ul ul .current_mark {font-weight: bold;} .p7PMMh07 li {filter: alpha(opacity=80);} .p7PMMh07 ul ul li {float:left; clear: both; width: 100%;}.p7PMMh07 {text-align: left;}.p7PMMh07 ul ul a {zoom: 1;}</style>
+<![endif]-->
+          <!--[if IE 5]>
+<style>.p7PMMh07, .p7PMMh07 ul ul a {height: 1%; overflow: visible !important;} .p7PMMh07 {width: 100%;}</style>
+<![endif]-->
+          <!--[if IE 7]>
+<style>.p7PMMh07, .p7PMMh07 a{zoom:1;}.p7PMMh07 ul ul li{float:left;clear:both;width:100%;}</style>
+<![endif]-->
+          <script type="text/javascript">
+<!--
+P7_PMMop('p7PMM_6',1,2,0,0,0,0,1,1,1,1,1,1,1,0);
+//-->
+          </script>
+    </div></div>
+    
+<!--<div id="footercontent">-->
+    <div id="footnavlist">
+    <ul>
+    <li><a href="contact.html">Contact</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="licensing.html">Licensing</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+    
+    <div id="footerinfo"><span class="footertext">RapidReader®, Cinetext™ and all variations are the sole property of SoftOlogy IdeaWorks Inc. 
+  &quot;Software for the Human Operating System&quot; ™</span></div></div>
+<!-- end #footer --></div>
+<!-- end #container -->
+<!-- General js functions for DHTML -->
+<script language="JavaScript" type="text/javascript"
+src="/softo_general.js">
+</script>
+
+<script language="javascript" type="text/javascript">
+
+// Call the page counter function.
+callPageCounter("pwr_usr_bus.html", null);
+
+</script>
+<script type="text/javascript">
+//documenttextsizer.setup("shared_css_class_of_toggler_controls")
+documenttextsizer.setup("texttoggler")
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* CSS Document */
+
+hr {
+	border-top-width: 2px;
+	border-top-style: dotted;
+	border-top-color: #CCC;
+	min-height: 1px;
+	margin-top: 2px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+#containerinner {
+	width: 950px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #077fab;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	top: 20px;
+}
+#headerinner  {
+	background-color: #FFF;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 950px;
+	text-align: left;
+	vertical-align: top;
+	white-space: normal;
+	display: inline;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+/* new RR logo wrapper */
+
+#logohead {
+	margin: 0px;
+	padding: 0px;
+	height: 101px;
+	width: 409px;
+	position: relative;
+	background-image: url(images2/logo_newsite.png);
+}
+
+/* p7 nav header goes in here */
+
+#new2_topnavwrap {
+	width: 450px;
+	position: relative;
+	left: 470px;
+	top: -80px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 10000;
+	background-color: #FFF;
+	background-image: url(images_rrfree_fin/new_nav_header_bg.jpg);
+	background-repeat: no-repeat;
+	height: 79px;
+}
+/* end p7 nav header goes in here */
+
+/* bottom of inner header and button */
+
+#new_innerheadbot_home {
+	background-image: url(images_rrfree/945_inner_lower_header_fin.png);
+	width: 950px;
+	position: relative;
+	height: 52px;
+	top: -65px;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	text-align: left;
+}
+
+/* new rr free dl button box*/
+
+#new_free_dl_inner {
+	color: #FFF;
+	width: 223px;
+	z-index: auto;
+	position: absolute;
+	top: 8px;
+	right: 3px;
+	margin: 0px;
+	height: 56px;
+}
+
+/* OLD main 1col content container */
+
+#new_help_tablecontainer {
+	width: 90%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: -10px;
+}
+
+/* main 1col content container */
+
+#faq_tablecontainer {
+	width: 90%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+
+#new_1col_tablecontainer {
+	width: 90%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	margin-top: -5px;
+}
+
+/* class 1col content container */
+
+.new_1col_textblock {
+	width: 98%;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	z-index: 999;
+	display: inline-block;
+	margin-right: auto;
+}
+
+/* class 1col table container power user e.g. */
+
+.new_1col_tableinner {
+	padding: 0px;
+	border: 1px solid #ccc;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-top: 10px;
+	width: 95%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* archnavlist CSS and table container power user e.g. 
+
+#anchnavlist
+{
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 1px;
+	padding-top: 3px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+#anchnavlist a, #anchnavlist a:link, #anchnavlist a:visited
+{
+	padding-left: 0.5em;
+	padding-right: 1em;
+	color: #075381;
+	font-weight: bold;
+	text-decoration: none;
+	border-left-width: 2px;
+	border-left-style: dotted;
+	border-left-color: #628595;
+	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+#anchnavlist a:hover, #anchnavlist a:active, #anchnavlist a:focus
+{
+border: 1px solid #000000;
+padding: 1px;
+padding-left: 0.5em;
+padding-right: 1em;
+text-decoration: none;
+}
+
+#anchnavlist li
+{
+	padding-right: 1em;
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	line-height: 0.92em;
+	font-weight: bold;
+}
+
+#anchnavlist ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+#anchnavlist #active a { background-color: #FFCC66; }
+
+.anchnavbox {
+	width: 99%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+.anchnavbox2 {
+	width: 99%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}*/
+.tabletext {
+	width: 96%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	padding: 0px;
+}
+
+.tablebox {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	width: 96%;
+	margin-top: -8px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: 2px dotted #B4C6D7;
+}
+
+#new_featureslist {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	list-style-position: outside;
+	list-style-image: url(images2/orng_arrow_smaller.png);
+	color: #354751;
+	line-height: 110%;
+	list-style-type: none;
+	font-variant: normal;
+}
+
+.new_tableboxcenter {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 95%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: 1px solid #B4C6D7;
+	background-repeat: repeat-x;
+	background-image: url(images2/tooltip_bg.png);
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+.list_inner {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-weight: bold;
+	list-style-position: outside;
+	list-style-image: url(images2/orng_arrow_smaller.png);
+	color: #354751;
+	line-height: 1.3em;
+	list-style-type: none;
+	font-variant: normal;
+	display: inline;
+}
+
+.new_tabletext {
+	width: 96%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#new_buy_table_box_1col {
+	width: 800px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	background-image: url(images_rrfree/TOP_PIC_BNR_SLC.png);
+	background-repeat: repeat-y;
+	height: 120px;
+	border: thin solid #666;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-left: 0px;
+	float: right;
+	position: relative;
+}
+
+#evrnotebox {
+	background-color: #cccccc;
+	clear: right;
+	float: left;
+	height: 225px;
+	width: 225px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+}
+#readabilitybox {
+	background-color: #cccccc;
+	clear: right;
+	float: left;
+	height: 225px;
+	width: 225px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+}
+#pdf_box {
+	clear: right;
+	float: left;
+	height: 166px;
+	width: 166px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+#msword_box {
+	clear: right;
+	float: left;
+	height: 103px;
+	width: 337px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+#ie_box {
+	clear: right;
+	float: left;
+	height: 103px;
+	width: 337px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+#txt_box {
+	clear: right;
+	float: left;
+	height: 166px;
+	width: 166px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+
+#web_cpy_pst_box {
+	clear: right;
+	float: left;
+	height: 136px;
+	width: 379px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+
+#outlook_box {
+	clear: right;
+	float: left;
+	height: 160px;
+	width: 337px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+#cpy_pst_box {
+	clear: right;
+	float: left;
+	height: 136px;
+	width: 379px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 30px;
+	border: 2px dotted #cccccc;
+	z-index: 999;
+	background-color: #cccccc;
+}
+
+#new_rr_onlaptop_float {
+	float: left;
+	width: 310px;
+	display: inline;
+	height: 310px;
+	position: relative;
+	top: 10px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
+
+#new_illus_lowvis_float {
+	float: left;
+	width: 160px;
+	display: inline;
+	height: 116px;
+	position: relative;
+	top: 10px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
+
+
+#staffpicbox {
+	width: 180px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	clear: left;
+	float: right;
+	margin-left: 10px;
+	border: 1px solid #B4C6D7;
+}
+
+.tableboxcenterlg {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 95%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: 1px solid #B4C6D7;
+	background-repeat: repeat-x;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	background-image: url(images2/tooltip_bg.png);
+}
+
+.abt_us_box {
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	display: inline-block;
+	margin-top: 10px;
+	width: 650px;
+	padding-left: 10px;
+	padding-left: 10px;	
+	}

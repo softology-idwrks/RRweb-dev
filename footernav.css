@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#footnavlist
+{
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-right: 0px;
+	width: 500px;
+	font-size: 1.2em;
+	padding-left: 0px;
+}
+
+#footnavlist a, #footnavlist a:link, #footnavlist a:visited
+{
+	border: 1px solid #628595;
+	padding: 1px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footnavlist a:hover, #footnavlist a:active, #footnavlist a:focus
+{
+border: 1px solid #000000;
+padding: 1px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+text-decoration: none;
+}
+
+#footnavlist li
+{
+padding-right: 1px;
+display: inline;
+font-size: 0.6em;
+}
+
+#footnavlist ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+#footnavlist #active a { background-color: #FFCC66; }

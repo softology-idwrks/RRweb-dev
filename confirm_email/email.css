@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+body  {
+	margin: 0px; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0px;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	
+	min-height: 230px;
+}
+
+h1 {
+	font-size: 100%;
+	}
+	
+#new_logohead {
+	margin: 0px;
+	padding: 0px;
+	height: 108px;
+	width: 411px;
+	position: relative;
+	background-image: url(images2/logo_newsite.png);
+}
+
+#email_containerinner {
+	width: 625px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #077fab;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	top: 20px;
+}
+
+#new_dl_tablecontainer {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding: 0px;
+	border-top-style: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.new_help_textblock {
+	width: 98%;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	z-index: 999;
+	display: inline-block;
+	margin-right: auto;
+}
+.new_1col_tableinner {
+	padding: 0px;
+	border: 1px solid #ccc;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	display: inline-block;
+	margin-top: 10px;
+	width: 98%;
+}
+.tablebox_dwnld {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 95%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: 1px solid #B4C6D7;
+	background-repeat: repeat-x;
+	padding: 10px;
+	background-image: url(images2/tooltip_bg.png);
+	background-color: #c0d4df;
+}
+
+#new_featureslist_idx {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-weight: bold;
+	list-style-position: outside;
+	list-style-image: url(images2/orng_arrow_smaller.png);
+	color: #4a4a4a;
+	line-height: 1.3em;
+	list-style-type: none;
+	font-variant: normal;
+	width: 670px;
+	margin-top: 15px;
+	float: left;
+}
+
+p {
+	font-family: Arial, sans-serif;
+	font-size: 0.85em;
+	font-weight: normal;
+	color: #333;
+	line-height: 1.3em;
+	word-spacing: 1px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.grayh3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #4a4a4a;
+	line-height: normal;
+	letter-spacing: 110%;
+}
+
+.grayh4 {
+	font-family: Tahoma;
+	font-size: .9em;
+	font-weight: normal;
+	color: #4a4a4a;
+	line-height: normal;
+	letter-spacing: 110%;
+}
+
+.bullettextboldBLU {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.3em;
+	font-weight: bold;
+	color: #336699
+}
+
+.bullettextboldBLUsm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.1em;
+	font-weight: bold;
+	color: #336699
+}
+.new_lrgheadblue {
+	color: #075381;
+	letter-spacing: -1px;
+	font-family: Georgia, Times New Roman, Times, Serif;
+	font-size: 2.0em;
+	margin: 0px;
+	padding: 0px;
+	line-height: 110%;
+	font-weight: normal;
+	text-align: left;
+}
+
+.email_head {
+	font-family: Tahoma,;
+	font-size: 1.4em;
+	line-height: 110%;
+	color: #333;
+	font-weight: normal;
+}
+
+.georgia16 {
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	line-height: 125%;
+	font-weight: normal;
+	color: #333;
+}
+
+/* used as h3 */
+
+.georgia14 {
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+	line-height: 125%;
+	font-weight: normal;
+	color: #4a4a4a;
+}
+
+.hme_topic_gfx_lft {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 250px;
+	margin-right: 5px;
+	margin-left: 40px;
+	height: 275px;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+}
+.hme_topic_gfx_rt {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 250px;
+	margin-right: 40px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	height: 275px;
+	float: right;
+	position: relative;
+}

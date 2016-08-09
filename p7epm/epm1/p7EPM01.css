@@ -1,0 +1,100 @@
+/* 
+  -----------------------------------
+  Elevator Panels
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 01 - Multicolor
+  -----------------------------------
+*/
+.p7EPM01 .p7epm_trigs {
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.p7EPM01 .p7epm_trigs ul {
+	margin: 0px;
+	padding: 0px;
+}
+.p7EPM01 .p7epm_trigs li {
+	list-style-type: none;
+	margin: 0 6px 3px 0;
+	float: left;
+}
+.p7EPM01 .p7epm_trigs a {
+	color: #000000;
+	padding: 6px 6px;
+	line-height: 1.5em;
+	float: left;
+	display: block;
+	border: 1px solid #FFFFFF;
+}
+.p7EPM01 .p7epm_trigs a:hover {
+	color: #FF9900;
+	border-color: #000000;
+}
+.p7EPM01 .p7epm_cwrapper {
+	border: 0;
+}
+.p7EPM01 .p7epm_content {
+	padding: 12px 24px;
+	line-height: 1.5em;
+	background-color: #FFFFFF;
+	border: 1px solid #333;
+	color: #000000;
+}
+.p7EPM01 .p7epm_content.pan1 {
+	color: #CCCCCC;
+	background-color: #333333;
+}
+.p7EPM01 .p7epm_content.pan2 {
+	background-color: #99CC33;
+	color: #FFFFFF;
+}
+.p7EPM01 .p7epm_content.pan3 {
+	background-color: #FF9900;
+	color: #FFFFFF;
+}
+.p7EPM01 .p7epm_content.pan4 {
+	color: #CCCCCC;
+	background-color: #333333;
+}
+.p7EPM01 .p7epm_content.pan5 {
+	background-color: #99CC33;
+	color: #FFFFFF;
+}
+.p7EPM01 .p7epm_trigs .p7epm_open {
+	color: #000000;
+	border-color: #000000;
+	background-color: #FFFFFF;
+}
+.p7EPM01 .p7epm_trigs .t1 .p7epm_open {
+	color: #CCCCCC !important;
+	background-color: #333333;
+	text-decoration: none;
+}
+.p7EPM01 .p7epm_trigs .t2 .p7epm_open {
+	color: #FFFFFF !important;
+	text-decoration: none;
+	background-color: #99CC33;
+}
+.p7EPM01 .p7epm_trigs .t3 .p7epm_open {
+	color: #FFFFFF !important;
+	text-decoration: none;
+	background-color: #FF9900;
+}
+.p7EPM01 .p7epm_trigs .t4 .p7epm_open {
+	color: #CCCCCC !important;
+	background-color: #333333;
+	text-decoration: none;
+}
+.p7EPM01 .p7epm_trigs .t5 .p7epm_open {
+	color: #FFFFFF !important;
+	text-decoration: none;
+	background-color: #99CC33;
+}
+.p7EPM01 .p7epm_ie5clear {
+	font-size: 0;
+	height: 0;
+	line-height: 0.0;
+}
+
+.p7EPM0X .p7epm_trigs li, .p7EPM0X .p7epm_trigs a { float: none; }
